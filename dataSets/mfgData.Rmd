@@ -1,0 +1,27 @@
+---
+title: "mfgData"
+output: html_document
+date: "2025-12-02"
+output:
+  html_document:
+  df_print: paged
+  theme: tactile
+  highlight: githubd
+  prettydoc::html_pretty: null
+---
+
+```{r setup, include=FALSE}
+# data reading / organization
+library(readxl)  
+library(dplyr)
+# plotting
+library(ggformula)
+# assumptions
+library(car)
+library(nortest)
+# analyses
+library(daewr)
+library(lme4)
+```
+
+

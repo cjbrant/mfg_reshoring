@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI, Distance, and the Future of U.S. Manufacturing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="no-js">
+  <div id="landing-overlay">
+    <div class="overlay-inner">
+      <div id="hex-hero">
+        <svg id="hex-svg" viewBox="0 0 200 200" aria-hidden="true"></svg>
+        <div id="lottie-container"></div>
+      </div>
+      <div id="overlay-prompt-scroll" class="cli-line">(scroll)</div>
+
+      <div id="overlay-prompt-interactive" style="display: none;">
+        <div id="overlay-interactive-desktop" class="overlay-mode">
+          <div class="cli-line">interactive? y/n</div>
+          <div class="cli-input">
+            <span class="cli-prefix">&gt;</span>
+            <input
+              id="overlay-input"
+              type="text"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>AI, Distance, and the Future of U.S. Manufacturing</h1>
+      <p class="hero-subhead">
+        For decades, offshoring followed a simple cost logic. AI is changing that logic at the margins,
+        where reliability, lead time, and control start to matter more than wages.
+      </p>
+    </div>
+  </header>
+
+  <main id="page-content">
+    <div class="content-wrapper">
+      <section id="intro" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>AI, Distance, and the Future of U.S. Manufacturing</h2>
+            <p data-typed-first>
+              For many years, location decisions in manufacturing followed a consistent pattern. Firms concentrated production in regions with lower labor costs and relied on long supply chains that remained predictable enough to manage. Distance became a manageable variable rather than a strategic risk, and domestic facilities adapted to a role centered on niche or short-run production.
+            </p>
+            <div class="section-body">
+              <p>
+                This arrangement worked as long as costs, logistics, and geopolitical conditions stayed stable. The last decade has repeatedly shown that these conditions are not fixed. AI is not a replacement for this structure, but it is altering the terms under which companies decide where production belongs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="offshoring" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>Offshoring and the Old Cost Model</h2>
+            <p data-typed-first>
+              The traditional cost model relied heavily on wage differentials. When labor accounts for a large share of unit cost, shifting production to lower-wage regions reliably reduces expenses. Most planning systems accepted long lead times because freight flows were steady and predictable. The cost of distant production could be absorbed into inventory strategy and forecasting.
+            </p>
+            <div class="section-body">
+              <p>
+                This model assumed two conditions. The first assumption was that global shipping networks would remain stable. The second assumption was that labor would continue to be the primary lever for controlling cost. Both assumptions have weakened. Freight delays have become more common, shipping rates fluctuate more sharply than they once did, and unexpected disruptions reach across supply chains. At the same time, automation and digital controls have changed the internal cost structure of many plants. Labor still matters, but process capability and equipment performance matter more than they once did.
+              </p>
+              <p>
+                A cost model that once depended on labor can shift toward one that depends on stability. This shift creates space for AI to matter.
+              </p>
+              <figure id="fig-gscpi-proxy" class="chart-figure">
+                <canvas id="chart-gscpi-proxy"></canvas>
+                <figcaption>
+                  Supply-side stress proxy using U.S. manufacturing output (IPMAN), indexed over time. Source: Federal Reserve Bank of St. Louis (FRED).
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="floor" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>What AI Changes on the Floor</h2>
+            <p data-typed-first>
+              AI affects operations by tightening the link between observation and response. Its impact is most visible in three areas: quality, reliability, and planning.
+            </p>
+            <div class="section-body">
+              <p>
+                In quality, computer vision systems detect defects at the moment they form. Plants have always relied on operators to identify flaws, but AI models analyze texture, reflectivity, geometry, and edge patterns faster and more consistently than a human can while running a line. When defects are caught early, scrap and rework drop. The economics of waste reduction are direct: every percentage point of scrap avoided increases the effective output of the line without increasing labor or machine time.
+              </p>
+              <p>
+                In reliability, predictive models track equipment conditions through signals like motor current, vibration patterns, bearing temperature, and historical failure curves. When these indicators drift, the system can recommend inspections or component changes before failures occur. Plants have always performed maintenance based on experience and scheduled intervals. Predictive tools simply raise the accuracy of those decisions. Fewer unplanned stops increase uptime, which matters more than most other operational improvements in mature facilities.
+              </p>
+              <p>
+                In planning, AI-driven schedulers connect production capacity to real demand. Instead of extending forecasts far into the future, these systems adjust plans as new data arrives. This reduces overproduction and improves on-time performance, which becomes particularly important in high-mix or short-window markets.
+              </p>
+              <p>
+                None of these tools remove the need for operators or technicians. They increase consistency. That consistency reduces the labor content per unit produced and lowers the cost of uncertainty. Plants that maintain steady operation can run closer to their designed performance without expanding staffing or adding redundant equipment.
+              </p>
+              <figure id="fig-scrap-uptime" class="chart-figure">
+                <canvas id="chart-scrap-uptime"></canvas>
+                <figcaption>Adoption of advanced manufacturing technologies by industry, as a proxy for scrap reduction and uptime gains. Source: U.S. Census Bureau, Annual Survey of Manufactures, 2022 ASM benchmark.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>AI and the Economics of Location</h2>
+            <p data-typed-first>
+              Once variation declines, the traditional advantage of low wages carries less weight. If a plant produces more reliable output with fewer disruptions, the units-per-labor-hour ratio improves enough that the location cost differential narrows.
+            </p>
+            <div class="section-body">
+              <p>
+                At this point, companies begin to weigh other factors more heavily: response time, quality assurance, supply risk, and proximity to customers. Research aligns with this shift. Kinkel’s 2020 analysis shows that firms adopting advanced manufacturing technologies experience less pressure to offshore because production becomes less dependent on labor intensity and more dependent on process capability. Infor’s industry reports describe U.S. facilities that run complex or high-mix products more effectively when supported by automated inspection and planning tools.
+              </p>
+              <p>
+                The labor-cost gap is also narrowing. Data from the Bureau of Labor Statistics and the OECD shows wage growth in major exporting countries outpacing wage growth in the United States over the past two decades. This trend reduces the savings that once made offshoring an easy decision.
+              </p>
+              <p>
+                Lead time becomes a differentiator when products change frequently or when markets are sensitive to availability. A plant located closer to demand and supported by strong process controls can respond faster to shifts. This responsiveness can outweigh the remaining wage advantage of distant production.
+              </p>
+              <p>
+                AI helps expand the set of products that can be produced competitively in higher-wage environments. It does not eliminate offshore options. It simply enlarges the feasible space for domestic production by reducing the cost penalties that once made reshoring impractical.
+              </p>
+              <figure id="fig-output-vs-employment" class="chart-figure">
+                <canvas id="chart-output-vs-employment"></canvas>
+                <figcaption>
+                  Figure 1. U.S. manufacturing output (IPMAN) and employment (MANEMP) indexed over time. Source: Federal Reserve Bank of St. Louis (FRED).
+                </figcaption>
+              </figure>
+              <figure id="fig-oecd-wages" class="chart-figure">
+                <canvas id="chart-oecd-wages"></canvas>
+                <figcaption>
+                  Figure 3. Average annual wages in manufacturing for selected countries. Source: OECD Average Annual Wages.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="constraints" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>Constraints Technology Does Not Remove</h2>
+            <p data-typed-first>
+              Several factors limit the speed and scale of reshoring, even when AI strengthens the case for domestic production.
+            </p>
+            <div class="section-body">
+              <p>
+                The first constraint is capital. Retrofitting older facilities or building new ones requires significant investment. Modern automation equipment, advanced sensors, and digital infrastructure all carry upfront costs. AI improves the returns on these investments, but it does not eliminate them.
+              </p>
+              <p>
+                The second constraint is workforce capability. Predictive tools, vision systems, and AI-supported planning require technicians who can diagnose issues and engineers who understand the models. Plants need more skill in fewer people. Without training or hiring pipelines, firms often struggle to support equipment that is more capable but also more complex.
+              </p>
+              <p>
+                The third constraint is structural. Bowman’s 2021 analysis indicates that permitting delays, insufficient site readiness, and regional infrastructure gaps limit large-scale reshoring efforts. These challenges differ by region and sector, but they slow down projects even when the economic case is strong.
+              </p>
+              <p>
+                Finally, the relationship between output and employment has changed. Firooz et al. (2022) show that automation-driven reshoring tends to expand production without restoring the labor intensity of earlier decades. This means reshoring can increase output and stabilize supply without necessarily recreating the employment patterns people associate with past industrial growth.
+              </p>
+              <p>
+                These constraints do not contradict the value of AI in domestic production. They define the practical boundaries within which firms must operate.
+              </p>
+              <figure id="fig-asm-benchmark" class="chart-figure">
+                <canvas id="chart-asm-benchmark"></canvas>
+                <figcaption>
+                  Figure 2. Adoption of advanced manufacturing technologies by industry, based on 2022 ASM benchmark data. Source: U.S. Census Bureau, Annual Survey of Manufactures.
+                </figcaption>
+              </figure>
+              <figure id="fig-capex-proxy" class="chart-figure">
+                <canvas id="chart-capex-proxy"></canvas>
+                <figcaption>Output-per-job index as a proxy for capital- and technology-intensive investment over time. Source: Federal Reserve Bank of St. Louis (FRED), IPMAN and MANEMP series.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="implications" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>Implications for U.S. Manufacturing</h2>
+            <p data-typed-first>
+              The effect of AI on manufacturing should be understood as gradual rather than transformative. It will not trigger an abrupt return of production to the United States, and it will not eliminate the advantages of global networks.
+            </p>
+            <div class="section-body">
+              <p>
+                Instead, it will expand the range of scenarios where domestic production is economically credible and operationally attractive. This expansion matters most where quality, responsiveness, customization, and intellectual property protection dominate cost considerations. In these areas, the reliability and stability that AI supports can outweigh the remaining labor-cost advantages abroad.
+              </p>
+              <p>
+                For executives, the question is not whether AI will force reshoring. The question is whether they will use it to build operations capable of competing across multiple dimensions: cost, quality, speed, and risk. Firms that pair AI with disciplined operations, targeted capital investment, and workforce development will be positioned to benefit from a shift toward proximity. Firms that do not may find that the same tools strengthen competitors instead.
+              </p>
+              <p>
+                AI shifts the location decision toward a more balanced evaluation of cost and capability. It does not guarantee domestic production, but it makes domestic production feasible in more cases than in the past. In a world where supply chains face more volatility, that feasibility has strategic value.
+              </p>
+              <figure id="fig-relative-wages" class="chart-figure">
+                <canvas id="chart-relative-wages"></canvas>
+                <figcaption>Relative manufacturing wages (US = 1.0) for selected countries, highlighting changing cost differentials. Source: OECD, Average Annual Wages dataset.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works-cited" class="cli-section">
+        <div class="section-surface">
+          <div class="section-inner">
+            <h2 data-typed-heading>Works Cited</h2>
+            <p data-typed-first>
+              Selected references informing this analysis.
+            </p>
+            <div class="section-body">
+              <ul class="works-list">
+                <li>Kinkel, Steffen. “Impact of Advanced Manufacturing Technologies on the Probability of Offshoring.” <em>Journal of Manufacturing Technology Management</em>, vol. 31, no. 2, 2020, pp. 299–318.</li>
+                <li>Firooz, Radin, et al. “Automation-Driven Reshoring and Labor Market Impacts in Advanced Manufacturing.” <em>Technological Forecasting and Social Change</em>, vol. 176, 2022, p. 121447.</li>
+                <li>Bowman, Bradley. “The Practical Barriers to Large-Scale Reshoring.” <em>SupplyChainBrain</em>, 2021.</li>
+                <li>Infor. “How Automation Is Reshaping U.S. Manufacturing.” <em>Infor Industry Brief</em>, 2021.</li>
+                <li>U.S. Census Bureau. <em>Annual Survey of Manufactures (ASM)</em>, 2022 benchmark data.</li>
+                <li>Bureau of Labor Statistics (BLS). “International Labor Comparisons: Manufacturing Compensation Costs.” U.S. Department of Labor, 2023.</li>
+                <li>OECD. “Average Annual Wages.” <em>OECD Data Explorer</em>, 2023.</li>
+                <li>Federal Reserve Bank of St. Louis (FRED). “Industrial Production: Manufacturing (IPMAN)” and “All Employees, Manufacturing (MANEMP),” 1990–2024.</li>
+                <li>Federal Reserve Bank of New York. “Global Supply Chain Pressure Index (GSCPI),” 2024.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <audio id="keyclick-sound" preload="auto">
+    <source src="audio/type.wav" type="audio/wav" />
+  </audio>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footnote">Crafted for leaders navigating the next era of U.S. production.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
